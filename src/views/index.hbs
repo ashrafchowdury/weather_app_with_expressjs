@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *{ font-family: 'Poppins', sans-serif; } .main_section{ width: 400px;
+      height: 580px; border-radius: 6px; background-color: rgb(240, 229, 229);
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      padding: 20px; } .weather_heading_div{ text-align: center; color: rgb(39,
+      39, 39); } .weather_heading_div h1{ font-size: 38px; }
+      .weather_heading_div h2{ font-size: 28px; } .info_div{ display: flex;
+      flex-wrap: wrap; justify-content: center; color: rgb(39, 39, 39); }
+      .info_div div{ width: 140px; height: 110px; border-radius: 4px; margin:
+      10px; display: flex; flex-direction: column; align-items: center;
+      justify-content: center; border: 1px solid rgba(39, 39, 39, 0.295) ;
+      font-size: 21px; text-transform: capitalize; font-weight: 600; } .info_div
+      div span{ margin-top: 15px; font-weight: bold; }
+    </style>
+  </head>
+  <body>
+    <section class="main_section">
+      <div class="weather_heading_div">
+        <h1>Weather</h1>
+        <h2>{{country}}</h2>
+      </div>
+
+      <div class="info_div">
+        <div>Tempreture<span>{{temp}}</span></div>
+        <div>Pressure<span>{{pressure}}%</span></div>
+        <div>humidity<span>{{humidity}}%</span></div>
+        <div>clouds<span>{{clouds}}%</span></div>
+        <div>speed<span>{{speed}}%</span></div>
+        <div>description<span>{{description}}</span></div>
+      </div>
+    </section>
+  </body>
+</html>
